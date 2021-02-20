@@ -1,0 +1,30 @@
+<%- include("header") -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <div id="list" class="box">
+    <% for (let i=0; i<newListItems.length; i++) { %>
+      <div id=<%= "item" + i %> class="item" draggable="true">
+        <input type="checkbox" name="is-done" aria-label="Item checked" <%= newListItems[i].isDone ? "checked" : " " %>>
+        <p class="item-child"><%=  newListItems[i].item  %></p>
+        <button type="submit" class="delete-item">X</button>
+      </div>
+    <% } %>
+  </div>
+
+  <div class="box">
+    <form class="new-item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off" aria-label="New list item" required>
+      <button type="submit" class="add-item">+</button>
+    </form>
+  </div>
+
+  <form id="reorder" action="/" method="post">
+    <input type="hidden" name="type" value="reorder">
+    <input id="old-index" type="hidden" name="oldIndex" value="">
+    <input id="new-index" type="hidden" name="newIndex" value="">
+  </form>
+
+<%- include("footer") -%>

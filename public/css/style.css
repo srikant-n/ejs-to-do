@@ -1,0 +1,109 @@
+html {
+    background-color: #f6f5f5;
+    background-image: -webkit-linear-gradient(65deg, #276678 45%, #d3e0ea 45%);
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  h1 {
+    background-color: #1687a7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .box {
+    width: 800px;
+    max-width: 80vw;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+    
+  .item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+    padding-right: 20px;
+  }
+  
+  .item:last-child {
+    border-bottom: 0;
+  }
+  
+  input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #1687a7;
+  }
+  
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    /* font-weight: 200; */
+    color: #00204a;
+    flex-grow: 1;
+  }
+  
+  .new-item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  button {
+    min-height: 50px;
+    width: 50px;
+    border-color: transparent;
+    background-color: #1687a7;
+    color: #fff;
+    font-size: 20px;
+    border-width: 0;
+    box-shadow: 1px 1px 2px #1687a7;
+  }
+  button:focus {
+    outline: transparent;
+    box-shadow: 1px 1px 10px #00204a;
+  }
+  
+  .add-item {
+    border-radius: 50%;
+    /* padding-bottom: 6px; */
+    font-size: 40px;
+  }
+
+  .delete-item {
+    min-height: 20px;
+    width: auto;
+    background-color: red;
+  }
+  
+  input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: 1px solid #1687a7;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 80%;
+  }
+  
+  input[type="text"]:focus {
+    outline: 2px solid #1687a7;
+    /* box-shadow: inset 0 -3px 0 0 #A683E3; */
+  }
+  
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+  
+  
